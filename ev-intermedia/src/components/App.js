@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pokemons
+      data:pokemons
     }
   }
 
@@ -15,7 +15,8 @@ class App extends React.Component {
     console.log(this.state)
     return (
       <div className="App">
-        <PokeList dataList={this.state}/>
+        <h1>Mi lista de Pokemons</h1>
+          <PokeList dataList={this.state.data}/>
       </div>
     );
   }
